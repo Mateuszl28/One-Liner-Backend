@@ -1,0 +1,20 @@
+{
+  "name": "@gather/core",
+  "version": "0.1.0",
+  "description": "Gather core: offline-first group state, bill splitting, settle-up, receipt parsing and sync for React Native on OpenHarmony",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "specs"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "demo": "tsx demo/two-devices.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
