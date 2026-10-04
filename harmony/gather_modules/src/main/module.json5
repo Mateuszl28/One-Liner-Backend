@@ -1,0 +1,16 @@
+{
+  "module": {
+    "name": "gather_modules",
+    "type": "har",
+    "deviceTypes": ["default", "tablet"],
+    // Only what the features need: P2P data sync and payment reminders. No INTERNET permission.
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC",
+        "reason": "$string:reason_datasync",
+        "usedScene": { "abilities": ["EntryAbility"], "when": "inuse" }
+      },
+      { "name": "ohos.permission.PUBLISH_AGENT_REMINDER" }
+    ]
+  }
+}
